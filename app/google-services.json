@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "116483813712",
+    "project_id": "oops-5113f",
+    "storage_bucket": "oops-5113f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116483813712:android:191a17fda6e279f9aafc55",
+        "android_client_info": {
+          "package_name": "com.example.crimeidentifier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI4ff_skFOJ8FvF1P90Snxq59peBXdmUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

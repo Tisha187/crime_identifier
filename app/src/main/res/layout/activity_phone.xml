@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Auto layout, variables, and unit scale are not yet supported -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black">
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+
+    <RelativeLayout
+        android:id="@+id/small_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/small_bg"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <FrameLayout
+            android:id="@+id/imagine"
+            :layout_alignParentBottom="true"
+            android:layout_width="306dp"
+            android:layout_height="185dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="-1dp"
+            android:layout_marginBottom="-0dp"
+            android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/group"
+                android:layout_width="233dp"
+                android:layout_height="117dp"
+                android:layout_alignBottom="@id/imagine"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="7dp"
+                android:src="@drawable/group"
+                tools:ignore="NotSibling">
+
+            </ImageView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/login_accou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="69dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="top"
+            android:text="@string/login_accou"
+            android:textAppearance="@style/login_accou"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar"
+            android:layout_marginTop="69dp"
+            android:layout_marginStart="350dp"
+            android:background="@color/neu"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/hello_welco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="111dp"
+            android:layout_marginStart="17dp"
+            android:textStyle="bold"
+            android:text="@string/hello_welco"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:textAppearance="@style/hello_welco"
+            android:gravity="top"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16dp"
+            android:layout_marginTop="171dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/offwhite">
+        </Button>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="171dp"
+            android:layout_marginStart="161dp"
+            android:text="Phone no."
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phone_no_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:gravity="top"
+        android:text="@string/phone_no_"
+        android:textAppearance="@style/phone_no_"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_bg"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cursorColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Enter Your Phone Number"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no_"/>
+
+    <Button
+        android:id="@+id/requestbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/poppins_light"
+        android:text="Request OTP"
+        android:onClick="generate_OTP"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/sign_in_wit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:gravity="top"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="@string/sign_in_wit"
+        android:textAppearance="@style/sign_in_wit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestbutton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/white"
+        android:text="Google"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_wit">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/no_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:text="@string/no_register"
+        android:textAppearance="@style/no_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

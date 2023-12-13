@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".profile_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/f2fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/small_bg"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/neu"
+            android:clipToOutline="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-35dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="350dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/neu"
+                android:src="@drawable/avatar">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/sun">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp"
+                android:text="28'C"
+                android:textColor="@color/white">
+
+            </TextView>
+
+            <FrameLayout
+                android:id="@+id/imagine"
+                :layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-0dp"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:id="@+id/group"
+                    android:layout_width="233dp"
+                    android:layout_height="117dp"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@drawable/group"
+                    tools:ignore="NotSibling">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/classification1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Hi ! User"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="360dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/wheel">
+
+                </ImageView>
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_81"
+        android:layout_width="332dp"
+        android:layout_height="265dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/frame_81"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2fragment">
+
+        <TextView
+            android:id="@+id/general_not"
+            android:layout_width="286dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/general_not"
+            android:textAppearance="@style/general_not" />
+
+        <View
+            android:id="@+id/line_18"
+            android:layout_width="358dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/line_18" />
+
+        <TextView
+            android:id="@+id/incident_up"
+            android:layout_width="318dp"
+            android:layout_height="24dp"
+            android:text="@string/incident_up"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="70dp"
+            android:textAppearance="@style/incident_up"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="24dp"
+            android:hint="Latest.."
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="100dp"
+            android:textAppearance="@style/incident_up"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical"
+            />
+
+
+        <View
+            android:id="@+id/line_19"
+            android:layout_width="358dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/line_18" />
+
+        <TextView
+            android:id="@+id/app_updates"
+            android:layout_width="318dp"
+            android:layout_height="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/app_updates"
+            android:textAppearance="@style/app_updates"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="24dp"
+            android:hint="Version"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="165dp"
+            android:textAppearance="@style/incident_up"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="178dp"
+            android:layout_height="24dp"
+            android:text="@string/settings"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="200dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/settings"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical"
+            />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnaviagationview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="4dp"
+        app:itemBackground="@color/dark_blue"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

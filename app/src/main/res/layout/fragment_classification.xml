@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".classification">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/f2fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:id="@+id/small_bg"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/neu"
+            android:clipToOutline="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="350dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/neu"
+                android:src="@drawable/avatar">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:src="@drawable/sun">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:text="28'C">
+
+            </TextView>
+
+            <FrameLayout
+                android:id="@+id/imagine"
+                :layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-0dp"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:id="@+id/group"
+                    android:layout_width="233dp"
+                    android:layout_height="117dp"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@drawable/group"
+                    tools:ignore="NotSibling">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/classification1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Classification"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    tools:ignore="MissingConstraints">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="360dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bell">
+
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/search_bar"
+                    android:layout_width="375dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/search_bar"
+                    android:clipToOutline="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="300dp"
+                        android:hint="search" />
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnaviagationview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/dark_blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:text="Edit"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:text="Review"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:text="Results"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2fragment"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="145dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        android:text="Machine Learning Model"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f2fragment"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

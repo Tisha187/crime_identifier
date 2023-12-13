@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home1"
+        android:title="home"
+        android:icon="@drawable/home_foreground"
+        >
+    </item>
+    <item
+        android:id="@+id/Evidence"
+        android:title="evidence"
+        android:icon="@drawable/evidence_foreground"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/classification"
+        android:title="classification"
+        android:icon="@drawable/classification_foreground">
+    </item>
+    <item
+        android:id="@+id/profile"
+        android:title="profile"
+        android:icon="@drawable/profile_foreground">
+    </item>
+
+</menu>

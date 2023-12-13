@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.crimeidentifier.home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment_to_classification2"
+            app:destination="@id/classification2" />
+    </fragment>
+    <fragment
+        android:id="@+id/classification2"
+        android:name="com.example.crimeidentifier.classification"
+        android:label="fragment_classification"
+        tools:layout="@layout/fragment_classification" >
+        <action
+            android:id="@+id/action_classification2_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.example.crimeidentifier.profile_fragment"
+        android:label="fragment_profile_fragment"
+        tools:layout="@layout/fragment_profile_fragment" />
+    <fragment
+        android:id="@+id/evidence_fragment"
+        android:name="com.example.crimeidentifier.Evidence_fragment"
+        android:label="fragment_evidence_fragment"
+        tools:layout="@layout/fragment_evidence_fragment" />
+</navigation>
